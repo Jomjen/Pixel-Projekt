@@ -4013,7 +4013,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -4035,7 +4035,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - 
-        - 
+        - Running
         - Running
         byteData: 0000000000000000000101
         arrayParamSizes: 
@@ -4171,7 +4171,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 1
+          value: 0
         - useVariable: 0
           name: 
           tooltip: 
@@ -4192,8 +4192,8 @@ MonoBehaviour:
         fsmRectParams: []
         fsmQuaternionParams: []
         stringParams:
-        - 
         - not Running
+        - 
         - 
         byteData: 0000000000000000000101
         arrayParamSizes: 
