@@ -21,8 +21,7 @@ GameObject:
   - component: {fileID: 4129031519599844}
   - component: {fileID: 68781772071034154}
   - component: {fileID: 68339546737701756}
-  - component: {fileID: 50269678079549454}
-  m_Layer: 10
+  m_Layer: 8
   m_Name: collider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,26 +95,6 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 6
---- !u!50 &50269678079549454
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1045077942029742}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 7
 --- !u!61 &61263624065739066
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -128,7 +107,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.03888464, y: 0.0077770352}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -139,7 +118,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.77913475, y: 0.47427857}
   m_EdgeRadius: 0
 --- !u!68 &68339546737701756
 EdgeCollider2D:
@@ -150,14 +129,14 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: 6.2515335, y: -0.3587972}
-  - {x: 6.250334, y: 0.3486421}
+  - {x: 6.5330057, y: -0.39528435}
+  - {x: 6.531806, y: 0.36427927}
 --- !u!68 &68781772071034154
 EdgeCollider2D:
   m_ObjectHideFlags: 1
@@ -167,15 +146,15 @@ EdgeCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   m_EdgeRadius: 0
   m_Points:
-  - {x: -0.5, y: 0}
-  - {x: -0.5024743, y: -0.22514868}
-  - {x: -0.49977207, y: 0.47622442}
+  - {x: -0.885036, y: -0.25369376}
+  - {x: -0.88025665, y: -0.23606765}
+  - {x: -0.9064908, y: 0.47248054}
 --- !u!95 &95478973707506858
 Animator:
   serializedVersion: 3
@@ -244,7 +223,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 01000101
+        actionIsOpen: 01010101
         actionStartIndex: 00000000030000000d00000021000000
         actionHashCodes: 9845b305b032740061566a03afff1105
         unityObjectParams: []
@@ -327,7 +306,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: 0.5
+          value: 0.1
         - useVariable: 1
           name: 
           tooltip: 
@@ -451,7 +430,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - goleft
-        byteData: 010100000001010000000000000000
+        byteData: 010100000001010000000000000100
         arrayParamSizes: 01000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
@@ -534,7 +513,7 @@ MonoBehaviour:
         - 
         - 
         actionEnabled: 01010101
-        actionIsOpen: 00000101
+        actionIsOpen: 01010101
         actionStartIndex: 00000000030000000d00000021000000
         actionHashCodes: 9845b305b032740061566a03afff1105
         unityObjectParams: []
@@ -617,7 +596,7 @@ MonoBehaviour:
           tooltip: 
           showInInspector: 0
           networkSync: 0
-          value: -0.5
+          value: 0.1
         - useVariable: 1
           name: 
           tooltip: 
@@ -741,7 +720,7 @@ MonoBehaviour:
         fsmQuaternionParams: []
         stringParams:
         - goright
-        byteData: 010100000001010000000000000000
+        byteData: 010100000001010000000000000100
         arrayParamSizes: 01000000
         arrayParamTypes:
         - HutongGames.PlayMaker.FsmInt
@@ -842,7 +821,7 @@ MonoBehaviour:
     locked: 0
     manualUpdate: 0
     keepDelayedEventsOnStateExit: 0
-    preprocessed: 0
+    preprocessed: 1
     ExposedEvents: []
     RestartOnEnable: 1
     EnableDebugFlow: 0
@@ -851,7 +830,7 @@ MonoBehaviour:
     activeStateName: 
     mouseEvents: 0
     handleLevelLoaded: 0
-    handleTriggerEnter2D: 0
+    handleTriggerEnter2D: 1
     handleTriggerExit2D: 0
     handleTriggerStay2D: 0
     handleCollisionEnter2D: 0
